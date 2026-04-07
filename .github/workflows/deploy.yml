@@ -1,4 +1,5 @@
 
+
 name: Deploy Vite to GitHub Pages
 
 on:
@@ -25,17 +26,17 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        working-directory: go-live-symphony/et-omni-go-symphony
+        working-directory: et-omni-go-symphony
         run: npm install
 
       - name: Build project
-        working-directory: go-live-symphony/et-omni-go-symphony
+        working-directory: et-omni-go-symphony
         run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: go-live-symphony/et-omni-go-symphony/dist
+          path: et-omni-go-symphony/dist
 
   deploy:
     needs: build
