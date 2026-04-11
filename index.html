@@ -19,7 +19,6 @@
 
 <!-- HEADER -->
 <header class="sticky top-0 bg-white border-b z-50">
-  <header class="sticky top-0 bg-white border-b z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
     <!-- Logo -->
@@ -43,8 +42,8 @@
     <!-- Mobile Menu Button -->
     <button
       id="mobile-menu-button"
-      class="md:hidden hidden bg-white border-t transition-all duration-300"
-      style="max-height: 100vh;"
+      class="md:hidden text-2xl focus:outline-none"
+      aria-label="Open menu"
     >
       ☰
     </button>
@@ -53,14 +52,14 @@
   <!-- Mobile Menu -->
   <div
     id="mobile-menu"
-    class="md:hidden hidden bg-white border-t"
+    class="md:hidden hidden bg-white border-t transition-all duration-300"
   >
     <nav class="flex flex-col px-6 py-4 space-y-4 font-medium">
-      <a href="#about" class="mobile-link">About</a>
-      <a href="#industries" class="mobile-link">Industries</a>
-      <a href="#services" class="mobile-link">Services</a>
-      <a href="#why-us" class="mobile-link">Why Us</a>
-      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#about">About</a>
+      <a href="#industries">Industries</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
